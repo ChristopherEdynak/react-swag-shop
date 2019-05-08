@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Product from '../product/product';
+
 import HttpService from '../services/http-service';
 
 const http = new HttpService();
@@ -39,6 +41,9 @@ class App extends Component {
           The Swag Shop
         </a>
       </header>
+      <div className="App-main">
+          <Product />
+        </div>
     </div>
   );
 }
