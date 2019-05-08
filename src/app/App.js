@@ -41,7 +41,7 @@ class App extends Component {
           The Swag Shop
         </a>
       </header>
-      <div className="App-main">
+      <div className="container App-main">
           <Product />
         </div>
     </div>
