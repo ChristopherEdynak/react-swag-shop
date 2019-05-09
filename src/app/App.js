@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+//Components
+
 import Product from '../product/product';
+import WishList from '../wishlist/wishlist';
+import ShoppingCart from '../cart/cart';
+import ProductCondensed from '../product-condensed/product-condensed';
+
+//Services
 
 import HttpService from '../services/http-service';
 
@@ -44,25 +52,34 @@ class App extends Component {
   render(){
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h2>Welcome to</h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          The Swag Shop
-        </a>
-      </header>
-      <div className="container App-main">
+        <h2>Welcome to the</h2>
+        <h3>Swag Shop</h3> 
+      </div>
+      <p className="App-intro">
+      Please check back regularly as we are constantly under construction
+      </p>
+      <div className="container-fluid App-main">
+        <div className="row">
+        <div className="col-sm-2">
+        <WishList />
+        </div>
+        <div className="col-sm-8">
         <div className="row">
           {this.productList()}
         </div>
-          <Product />
         </div>
-    </div>
+        <div className="col-sm-2">
+        <div className="row">
+        <ShoppingCart />
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    
+ 
   );
 }
 }

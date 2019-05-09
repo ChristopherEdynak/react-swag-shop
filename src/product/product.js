@@ -3,16 +3,15 @@ import './product.css';
 
 class Product extends Component {
     render() {
-        return (
-            <div className="card product">
-            <img className="card-img-top" src={this.props.imgUrl} alt="Product"></img>
+        return ( <div className="card product"> 
+            <img className="card-img-top" src={this.props.imgUrl} alt= "Product"></img>
             <div className="card-block">
                 <h4 className="card-title">{this.props.title}</h4>
                 <p className="card-text">Price: ${this.props.price}</p>
                 <a href="#" className="btn btn-primary">Add to Wishlist</a>
+                <a href="#" className="btn btn-danger">Add to Cart</a>
              </div>
-          </div>
-        );
+          </div> );
         
     }
 }
