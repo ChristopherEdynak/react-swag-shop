@@ -58,7 +58,7 @@ class App extends Component {
         <h3>Swag Shop</h3> 
       </div>
       <p className="App-intro">
-      Please check back regularly as we are constantly under construction
+      Please check back regularly as we are constantly under construction...
       </p>
       <div className="container-fluid App-main">
         <div className="row">
@@ -77,6 +77,7 @@ class App extends Component {
         </div>
         </div>
         </div>
+        
         <div className="App-footer"></div>
         </div>
     
