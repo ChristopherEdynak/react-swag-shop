@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './cart.css';
+import DataService from '../services/data-service';
 
 import ProductCondensed from '../product-condensed/product-condensed';
 

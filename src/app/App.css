@@ -10,7 +10,7 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +26,11 @@
 .App-main {
   padding-top:35px;
   padding-bottom:35px;
+}
+
+.App-footer {
+  background-color: #222;
+  height: 150px;
 }
 
 @keyframes App-logo-spin {
